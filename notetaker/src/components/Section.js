@@ -6,6 +6,7 @@ const Section = ({ genre }) => {
     const [movies, setMovies] = useState(null)
     const [pageState, setPageState] = useState(null)
     console.log(pageState)
+
     const fetchData = async () => {
         const response = await fetch("/.netlify/functions/getMovies", {
             method: "POST",
